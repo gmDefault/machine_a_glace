@@ -7,3 +7,4 @@ git config --global user.email "mail@"
 
 
 changement de branche : git checkout [BRANCH]
+a
