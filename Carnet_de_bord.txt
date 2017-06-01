@@ -8,7 +8,7 @@
 *                                                                              *
 ********************************************************************************
 
-31/05/2017 : 
+31/05/2017 :
 
 
  But du jeu :
@@ -58,14 +58,16 @@ Joueurs :
 
 
 
-1 Juin 2017 : 
+1 Juin 2017 :
 
+Définition de tous les prototypes :
+Structuration MVC (modèle vu machine)
+Automate et contrôlleur
+Affichage graphique (grille)
 
 - Choix de s'orienter vers l'utilisation de SWING pour l'interface graphique.
 
 Nous avons scindé le groupe en deux partie. La première s'occupe de la partie "Entité" du projet. La seconde s'intéresse à la partie graphique.
-
-- Création des premières classes JAVA de notre projet : Entite, Direction... afin de pouvoir effectuer les premiers tests.
-
-
-
+Une entité est soit un robot soit un joueur.
+- Création des premières classes JAVA de notre projet : Entite, Direction, Terrain afin de pouvoir effectuer les premiers prototypes.
+- Création d'une première structure de grille
