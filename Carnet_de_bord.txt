@@ -1,0 +1,71 @@
+********************************************************************************
+*   COURTIAL Julien - GROS-DAILLON Hugo - LAFRASSE Cédric - MANEVAL Thibaud    *
+*   RICM 3                                       Tuteur : Philippe BIDINGER    *
+********************************************************************************
+*       __        __        ___ ___     __   ___     __   __   __   __         *
+*      /  `  /\  |__) |\ | |__   |     |  \ |__     |__) /  \ |__) |  \        *
+*      \__, /--\ |  \ | \| |___  |     |__/ |___    |__) \__/ |  \ |__/        *
+*                                                                              *
+********************************************************************************
+
+31/05/2017 : 
+
+
+ But du jeu :
+
+ Posséder la majorité du terrain ou tuer le joueur adverse
+
+ Règle du jeu :
+
+ Les personnages peuvent ramasser des opérateurs (en marchant sur
+une case sur laquelle un opérateur est posé). Le joueur peut créer des robots
+avec ces opérateurs. Chaques opérateurs donnent des capacités aux robots
+auxquels ils sont associés. Par exemple : ~~~~~~~~
+Les cases que traverse le joueur (ou ses robots) sont colorier de sa couleur.
+Les joueurs et les robots possèdent des points de vies. La victoire peut être
+remporté par kill du joueur adverse OU par domination du terrain (plus grande
+partie coloriée par une équipe).
+
+Nombre de joueur : 2 joueurs
+
+Map :
+
+ Génération d’une map aléatoire avec qqs obstacles.
+ Nombre de cases : < 30 * 30.
+ Obstacle initialisé aléatoirement
+ Case avec Bonus / malus : Case avec "caisse" avec aléatoirement bonus/malus :
+             +PV +Dégât +Vision -poison (perte de points de vie par tour de jeu)
+
+Opérateurs :
+
+ Nombre d’opérateur fixe pour le début du jeu (disposé aléatoirement)
+ puis spawn régulier.
+
+Robots :
+
+ nombre total : 8<x<12       4 ou 6 pour chaque joueurs.
+ points de vie : ??
+ nombre d’opérateur équipable par robot : ??
+ Programmable à distance : Si oui : Portée? Ligne de vue?
+
+Joueurs :
+     nombre de case de déplacement possible par tour : ?
+     points de vie :
+     capacité de départ :
+     Opérateur aléatoire au départ dans l'inventaire? Si oui combien?
+
+
+
+
+
+1 Juin 2017 : 
+
+
+- Choix de s'orienter vers l'utilisation de SWING pour l'interface graphique.
+
+Nous avons scindé le groupe en deux partie. La première s'occupe de la partie "Entité" du projet. La seconde s'intéresse à la partie graphique.
+
+- Création des premières classes JAVA de notre projet : Entite, Direction... afin de pouvoir effectuer les premiers tests.
+
+
+
