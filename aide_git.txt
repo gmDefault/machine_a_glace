@@ -1,7 +1,16 @@
-git add *name*
-git commit -m "Message"
-git push
+SE POSITIONNER D'ABORD DANS LE BON REPERTOIRE
+(celui associé au git)
+
+AVANT N'IMPORTE QUELLE COMMANDE/MODIFICATION DU CODE, TOUJOURS EXECUTER :
 git pull /** Récep info */
+
+
+Pour ajouter vos modifications :
+
+git add .
+git commit -m "Message de vos modifs"
+git push
+
 git config --global user.email "mail@"
 
 
