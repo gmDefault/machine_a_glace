@@ -1,4 +1,4 @@
-package edu.coding.samples.game;
+package machine_a_glace;
 
 import java.awt.event.WindowEvent;
 

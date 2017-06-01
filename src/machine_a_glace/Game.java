@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package edu.coding.samples.game;
+package machine_a_glace;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

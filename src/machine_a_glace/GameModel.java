@@ -1,4 +1,4 @@
-package edu.coding.samples.game;
+package machine_a_glace;
 
 import java.util.Iterator;
 import java.util.LinkedList;
