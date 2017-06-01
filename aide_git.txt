@@ -1,0 +1,9 @@
+git add *name*
+git commit -m "Message"
+git push
+git pull /** Récep info */
+git config --global user.email "mail@"
+
+
+
+changement de branche : git checkout [BRANCH]
