@@ -1,7 +1,7 @@
 package machine_a_glace;
 
 public class Terrain {
-	private static int taille = 10;
+	private static int taille = 30;
 	public static Case terrain[][] = new Case[taille][taille];
 
 	private Terrain() {
@@ -22,28 +22,46 @@ public class Terrain {
 						terrain[i][j].setCase(Contenu.Obstacle);
 					} else {
 						terrain[i][j] = new Case();
-						if (Math.random() < 0.20) {
-							terrain[i][j].setCase(Contenu.Obstacle);
-						}
+						//terrain[i][j].setCase(Contenu.Vide);
+//						if (Math.random() < 0.20) {
+//							terrain[i][j].setCase(Contenu.Obstacle);
+//						}
 					}
 
 				}
 			}
 
 		}
+		//terrain[14][1].setCase(Contenu.Obstacle);
+		//terrain[16][1].setCase(Contenu.Obstacle);
+		//terrain[5][4].setCase(Contenu.Obstacle);
+		//terrain[7][4].setCase(Contenu.Obstacle);
+
+		
+		
 	}
 
 	public static void afficher() {
-		for (int i = 0; i < 10; i++) {
-			for (Case c : terrain[i]) {
-				System.out.print(c.toString() + "|");
+		
+		for (int i = 0; i < taille; i++) {
+			for (int j = 0; j < taille; j++) {
+				System.out.print(terrain[j][i].toString() + "|");
+				if (j == taille-1) {
+					System.out.println();
+				}
+				
 			}
-			System.out.println();
-			for (int j = 0; j < 10; j++) {
-				System.out.print("--");
-			}
-			System.out.println();
 		}
+//		for (int i = 0; i < taille; i++) {
+//			for (Case c : terrain[i]) {
+//				System.out.print(c.toString() + "|");
+//			}
+//			System.out.println();
+//			for (int j = 0; j < taille; j++) {
+//				System.out.print("--");
+//			}
+//			System.out.println();
+//		}
 	}
 
 	public static void main(String[] args) {
@@ -81,7 +99,7 @@ public class Terrain {
 				}
 			}
 			
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 		}
 	}
 }

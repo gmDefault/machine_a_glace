@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-up" width="60" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="Tileset" tilewidth="32" tileheight="32" tilecount="4096">
+  <image source="../../../Color-war/maps/map/Tiles/32x32.png" width="4096" height="1024"/>
+ </tileset>
+ <tileset firstgid="4097" source="../../../Color-war/maps/map/Tiles/collision.tsx"/>
+ <tileset firstgid="4122" name="PathAndObjects" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../../../Color-war/maps/PathAndObjects.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="4378" name="tileset_basic_terrain" tilewidth="32" tileheight="32" tilecount="132">
+  <image source="../../../Color-war/maps/map/tileset_basic_terrain.png" width="192" height="704"/>
+ </tileset>
+ <tileset firstgid="4510" name="tileset_other_n" tilewidth="32" tileheight="32" tilecount="176">
+  <image source="../../../Color-war/maps/map/tileset_other_n.png" width="368" height="512"/>
+ </tileset>
+ <tileset firstgid="4686" name="tileset_other" tilewidth="32" tileheight="32" tilecount="176">
+  <image source="../../../Color-war/maps/map/tileset_other.png" width="368" height="512"/>
+ </tileset>
+ <layer name="Collision" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2ZQQ6AIAwE8Qf+/7WeTDwo0q243dIm3NoOE4gQbA2PbecMVqDssw6pV/RVY6Lsp3xLn2i+nr060ieS76y5XPtG8s3KZLLLNze7fP9nv81hdI69vK/OOU+g90HPfVjJ987P6sz27a3T6Fpa+7BiRV9rvvp+RmrUv1d1HuViMtnlm5tdvjz2iu85K73XofmZ71eKTC9b+X8KY3jiAAS3tUIgHAAA
+  </data>
+ </layer>
+ <layer name="Background" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UTQqDMBCGYQV3ycZ7mLt13SMIguKtusuNSheCHVrG+eJPIt/iRVAm+JBo9FUVwWqH1yTMPj0eav3UtXghYbYEb1jViev6fkneALZlNjev9p6W/dXWKsFr+X5z9W45q72zp615lRex7BG99NJL7xnel2i+sXcxyntW81VeuVcP/518Lq3/9lxbh16e5xy8v/byzv+rvaKXXnrptTY4PcSjrZmz94jopZdeeq2NDm9KmE3xvgGDhr5sIBwAAA==
+  </data>
+ </layer>
+ <layer name="Object" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2YPQ6DMAxG2RmAmet17Yl6jg60Qt04DFOPUHWwmiDMX9x8xsm3GCUkzw+BkFIU8dNWfj1LXvWxdbfKrzGYEkGwz+TbNb/rkRmXZkpmjk29P3Y4zIXWT5+FJt9noCMXd19NvlaZlL5Mg4lkZ1/bbA2+15Ue1ua33EdzGnytM5FspG+O7aT2Pqfqm/9HtphIdva1zUb6XgBsBJNjD3/qxd1Xk+831FuoO7ePNt+luL2PzLg0UzKpf79bc6/9GoOJzht0rvoBYIbzGSAcAAA=
+  </data>
+ </layer>
+</map>
