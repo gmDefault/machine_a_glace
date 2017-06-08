@@ -40,6 +40,12 @@ public class View extends BasicGame {
 	private ArrayList<Point> pos_color = new ArrayList<Point>();
 	private ArrayList<Point> pos_color_2 = new ArrayList<Point>();
 
+	private final float DEBUT_VIE_ROUGE_X = 1631;
+	private final float FIN_VIE_ROUGE_X = 1778;
+	private final float VIE_Y = 122;
+
+	private final float DEBUT_VIE_BLEU_X = 130;
+	private final float FIN_VIE_BLEU_X = 277;
 
 	private boolean canmove = false;
 	private boolean canmove2 = false;
@@ -138,8 +144,17 @@ public class View extends BasicGame {
 		// TODO Auto-generated method stub
 		Image peinture_rouge = new Image("maps/peinture_rouge.png");
 		Image peinture_bleu = new Image("maps/peinture_bleu.png");
-		Image hud_bleu = new Image("maps/hud_bleu.png");
+		Image hud_bleu = new Image("maps/hud_bleu.png");		
 		Image hud_rouge = new Image("maps/hud_rouge.png");
+		
+		Image deb_v_r = new Image("maps/debut_vie_red.png");
+		Image mil_v_r = new Image("maps/milieu_vie_red.png");
+		Image fin_v_r = new Image("maps/fin_vie_red.png");
+		
+		Image deb_v_b = new Image("maps/debut_vie_bleu.png");
+		Image mil_v_b = new Image("maps/milieu_vie_bleu.png");
+		Image fin_v_b = new Image("maps/fin_vie_bleu.png");
+
 
 		
 
@@ -147,6 +162,17 @@ public class View extends BasicGame {
 		
 		hud_bleu.draw(15, 15);
 		hud_rouge.draw(1920-300, 15);
+		
+		deb_v_r.draw(this.DEBUT_VIE_ROUGE_X,this.VIE_Y);
+		for (float i = this.DEBUT_VIE_ROUGE_X+7; i<  this.DEBUT_VIE_ROUGE_X+112; i+=7) {
+			mil_v_r.draw(i, this.VIE_Y);
+		}
+		//fin_v_r.draw(this.FIN_VIE_ROUGE_X,this.VIE_Y);
+		deb_v_b.draw(this.DEBUT_VIE_BLEU_X,this.VIE_Y);
+		for (float i = this.DEBUT_VIE_BLEU_X+7; i<  this.DEBUT_VIE_BLEU_X+147; i+=7) {
+			mil_v_b.draw(i, this.VIE_Y);
+		}
+		fin_v_b.draw(this.FIN_VIE_BLEU_X,this.VIE_Y);
 
 		for(int i = 0; i<this.pos_color.size(); i++) {
 			peinture_rouge.drawCentered(this.pos_color.get(i).getX(), this.pos_color.get(i).getY());
