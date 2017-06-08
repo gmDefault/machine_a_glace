@@ -155,6 +155,10 @@ public class View extends BasicGame {
 		Image mil_v_b = new Image("maps/milieu_vie_bleu.png");
 		Image fin_v_b = new Image("maps/fin_vie_bleu.png");
 
+		Image inventaire = new Image("maps/inventaire.png");
+		Image robots_inv = new Image("maps/robots_inv.png");
+		Image robots_inv2 = new Image("maps/robots_inv2.png");
+
 
 		
 
@@ -169,6 +173,15 @@ public class View extends BasicGame {
 		}
 		//fin_v_r.draw(this.FIN_VIE_ROUGE_X,this.VIE_Y);
 		deb_v_b.draw(this.DEBUT_VIE_BLEU_X,this.VIE_Y);
+		
+		inventaire.draw(0, 175);
+		inventaire.draw(1660, 175);
+		
+		robots_inv.draw(30, 650);
+		robots_inv2.draw(1680, 650);
+
+
+		
 		for (float i = this.DEBUT_VIE_BLEU_X+7; i<  this.DEBUT_VIE_BLEU_X+147; i+=7) {
 			mil_v_b.draw(i, this.VIE_Y);
 		}
